@@ -1,0 +1,2 @@
+İndirip "library/modules/Application.config.js" dosyasında ki token kısmını değiştirerek kullanabilirsiniz.
+Altyapı sadece slash komutlarını destekler, dilerseniz SlashCommandBuilder kullanabilirsiniz.
