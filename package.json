@@ -1,7 +1,7 @@
 {
   "name": "temiz-altyapi",
   "version": "1.0.0",
-  "description": "İçinde komut bulunmayan herkes tarafından kullanılabilir bir Discord.js altyapısı.",
+  "description": "İçinde gereksiz komut bulunmayan herkes tarafından kullanılabilir bir Discord.js altyapısı. Sadece slash komutlarını destekler.",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
