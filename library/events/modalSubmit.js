@@ -7,7 +7,7 @@ module.exports = async interaction => {
     await interaction.client.database.set('last-evaluated-code', code);
 
     try {
-      const result = await eval(code.includes('await') ? code : `(async () => { ${code} })()`);
+      const result = await eval(!code.includes('await') ? code : `(async () => { ${code} })()`);
       return interaction.followUp({ content: '```js\n' + inspect(result, { depth: 0 }).slice(0, 1990) + '```' });
     } catch(error) {
       return interaction.followUp({ content: '```js\n' + inspect(error, { depth: 0 }).slice(0, 1990) + '```' });
