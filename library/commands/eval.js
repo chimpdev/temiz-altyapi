@@ -1,5 +1,4 @@
 const { SlashCommandBuilder } = require('@discordjs/builders');
-const { Modal, TextInputComponent, showModal } = require('discord-modals');
 
 module.exports = {
   data: new SlashCommandBuilder()
